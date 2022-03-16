@@ -4,20 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" href="main.css"/>
     <title>Document</title>
 </head>
 <body>
-    Hello!
+    <div class="app-wrap">
+        <header>
+            <input type ="text" autocomplete="off" class="search-box"
+            placeholder="Search for a city..."/>
+        </header>
+    
+
+        <main>
+        <section class ="location">
+            <div class ="city">Calgary, AB</div>
+            <div class =date>Thursday January 13 2022</div>
+        </section>
+        <div class="current">
+            <div class="temp">15<span>°c</span></div>
+            <div class="weather">Sunny</div>
+            <div class="hi-low">15°c / 16°c</div>
+        </div>
+
+         </main>
+    
+    </div>
+    
 
 
-    <script>
+    <script  src="main.js">
 
-        let city = "orlando";
+        // let city = "orlando";
        
-         fetch(`/.netlify/functions/fetch-weather?q=${city}`)
-         .then(res=> {console.log(res.json())});
-         //`https://api.openweathermap.org/data/2.5/weather?q=orlando&units=metric&APPID=ae557e6456e08983d7c8810ff61a9d65`
-        //https://api.openweathermap.org/data/2.5/weather?q=orlando&units=metric&APPID=ae557e6456e08983d7c8810ff61a9d65
+        //  fetch(`/.netlify/functions/fetch-weather?q=${city}`)
+        //  .then(res=> {console.log(res.json())});
+
     </script>
 </body>
 </html>
